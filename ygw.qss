@@ -1,0 +1,72 @@
+QFrame{
+    background-color: rgba(47,47,47,0.3);
+    font-family: "楷体";
+}
+
+QLabel{
+    background-color: rgba(47,47,47,0.3);
+    height: 18;
+    border-style: inherit;
+
+    font-family: "楷体";
+    font-size: 15;
+    font-weight: bold;
+    color: rgba(61,235,242,1);
+
+}
+
+QLineEdit{
+    background-color: rgba(47,47,47,0.3);
+    height: 18;
+    border-style: inherit;
+
+    font-family: "楷体";
+    font-size: 15;
+    font-weight: bold;
+    color: rgba(244,251,129,1);
+}
+
+QComboBox{
+    border-style: inherit;
+    height: 18;
+    background-color: rgba(47,47,47,0.3);
+    text-align:center;
+    font-family: "楷体";
+    font-size: 15;
+    font-weight: bold;
+    color: rgba(244,251,129,1);
+}
+
+QRadioButton{
+    border-style: inherit;
+    height: 18;
+    background-color: rgba(47,47,47,0.3);
+
+    font-family: "楷体";
+    font-size: 15;
+    font-weight: bold;
+    color: rgba(90,233,75,1);
+}
+
+QListWidget{
+    border-style: inherit;
+    height: 18;
+    background-color: rgba(47,47,47,0.3);
+    text-align:center;
+    font-family: "楷体";
+    font-size: 15;
+    font-weight: bold;
+    color: rgba(244,251,129,1);
+}
+
+QPushButton{
+    border-style: inherit;
+    height: 18;
+    width: 200;
+    background-color: rgba(47,47,47,0.3);
+
+    font-family: "楷体";
+    font-size: 15;
+    font-weight: bold;
+    color: rgba(254,249,170,1);
+}
