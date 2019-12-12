@@ -124,6 +124,7 @@ def init_show_card_info_window():
     sip.delete(ygw.show_card_info_window)
 
 def update_result(result_list):
+    print(len(result_list))
     ygw.right_layout.removeWidget(ygw.result_top_left)
     sip.delete(ygw.result_top_left)
     ygw.right_layout.removeWidget(ygw.result_top_right)
@@ -134,7 +135,10 @@ def update_result(result_list):
     ygw._create_right_window()
     ygw._create_card_info_window()
     show_card_list(result_list)
-    card = result_list[0]
+    if len(result_list):
+        card = result_list[0]
+    else:
+        return
     show_card_img(card)
     show_card_info(card)
 
@@ -149,6 +153,7 @@ def card_clicked(index):
 def show_card_img(card):
     ygw.result_top_right.setPixmap(QPixmap("data/card_icon/{}.jpg".format(card['name_nw'])))
 
+
 def show_card_list(result_list):
     # ##################搜索出的卡片列表
     card_list_widget = QListWidget(ygw.result_top_left)
@@ -160,6 +165,7 @@ def show_card_list(result_list):
     ygw.result_top_left_layout.addWidget(card_list_widget)
 
 def show_card_info(card):
+
     name_cn_key = QLabel(ygw.show_card_info_window,text = "中文名")
     ygw.info_layout.addWidget(name_cn_key, 0,0,1,1)
     name_cn_value = QLabel(ygw.show_card_info_window, text=card['name_nw'])
